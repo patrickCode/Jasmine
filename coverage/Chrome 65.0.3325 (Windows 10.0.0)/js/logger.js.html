@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js\logger.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">js/</a> logger.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.55% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>38/49</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>12/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.91% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>10/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">78.26% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>36/46</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">(function (global, factory) {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof define === "function" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >define.amd)</span> {
+<span class="cstat-no" title="statement not covered" >        define(["exports", "./consoleLogger"], factory);</span>
+    } else <span class="missing-if-branch" title="if path not taken" >I</span>if (typeof exports !== "undefined") {
+<span class="cstat-no" title="statement not covered" >        factory(exports, require("./consoleLogger"));</span>
+    } else {
+        var mod = {
+            exports: {}
+        };
+        factory(mod.exports, global.consoleLogger);
+        global.logger = mod.exports;
+    }
+})(this, function (exports, _consoleLogger) {
+    "use strict";
+&nbsp;
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.Logger = undefined;
+&nbsp;
+    function _classCallCheck(instance, Constructor) {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (!(instance instanceof Constructor)) {
+<span class="cstat-no" title="statement not covered" >            throw new TypeError("Cannot call a class as a function");</span>
+        }
+    }
+&nbsp;
+    var _createClass = function () {
+        function defineProperties(target, props) {
+            for (var i = 0; i &lt; props.length; i++) {
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                <span class="missing-if-branch" title="else path not taken" >E</span>if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+&nbsp;
+        return function (Constructor, protoProps, staticProps) {
+            <span class="missing-if-branch" title="else path not taken" >E</span>if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (staticProps) <span class="cstat-no" title="statement not covered" >defineProperties(Constructor, staticProps);</span>
+            return Constructor;
+        };
+    }();
+&nbsp;
+    var Logger = exports.Logger = function () {
+        function Logger(consoleLogger) {
+            _classCallCheck(this, Logger);
+&nbsp;
+            <span class="missing-if-branch" title="if path not taken" >I</span>if (consoleLogger === undefined || consoleLogger === null) {
+<span class="cstat-no" title="statement not covered" >                this._consoleLogger = new _consoleLogger.ConsoleLogger();</span>
+            } else {
+                this._consoleLogger = consoleLogger;
+            }
+            this.currentMessage = null;
+        }
+&nbsp;
+        _createClass(Logger, [{
+            key: "LogMessage",
+            value: function LogMessage(message, correlationId) {
+                try {
+                    var finalMessage = this.createFinalMessage(message, correlationId);
+                    this.currentMessage = finalMessage;
+                    this._consoleLogger.LogConsoleMessage(finalMessage);
+                } catch (exception) {
+<span class="cstat-no" title="statement not covered" >                    console.error(JSON.stringify(exception));</span>
+                }
+            }
+        }, {
+            key: "LogError",
+            value: <span class="fstat-no" title="function not covered" >function LogError(message, correlationId) {</span>
+<span class="cstat-no" title="statement not covered" >                try {</span>
+<span class="cstat-no" title="statement not covered" >                    var finalMessage = this.createFinalMessage(message, correlationId);</span>
+<span class="cstat-no" title="statement not covered" >                    this.currentMessage = finalMessage;</span>
+<span class="cstat-no" title="statement not covered" >                    this._consoleLogger.LogError(finalMessage);</span>
+                } catch (exception) {
+<span class="cstat-no" title="statement not covered" >                    console.error(JSON.stringify(exception));</span>
+                }
+            }
+        }, {
+            key: "createFinalMessage",
+            value: function createFinalMessage(message, correlationId) {
+                var finalMessage = message + " - Correlation ID: " + correlationId;
+                return finalMessage;
+            }
+        }]);
+&nbsp;
+        return Logger;
+    }();
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvZ2dlci5qcyJdLCJuYW1lcyI6WyJMb2dnZXIiLCJjb25zb2xlTG9nZ2VyIiwidW5kZWZpbmVkIiwiX2NvbnNvbGVMb2dnZXIiLCJjdXJyZW50TWVzc2FnZSIsIm1lc3NhZ2UiLCJjb3JyZWxhdGlvbklkIiwiZmluYWxNZXNzYWdlIiwiY3JlYXRlRmluYWxNZXNzYWdlIiwiTG9nQ29uc29sZU1lc3NhZ2UiLCJleGNlcHRpb24iLCJjb25zb2xlIiwiZXJyb3IiLCJKU09OIiwic3RyaW5naWZ5IiwiTG9nRXJyb3IiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1FBR2FBLE0sV0FBQUEsTTtBQUVULHdCQUFZQyxhQUFaLEVBQTJCO0FBQUE7O0FBQ3ZCLGdCQUFJQSxrQkFBa0JDLFNBQWxCLElBQStCRCxrQkFBa0IsSUFBckQsRUFBMkQ7QUFDdkQscUJBQUtFLGNBQUwsR0FBc0Isa0NBQXRCO0FBQ0gsYUFGRCxNQUVPO0FBQ0gscUJBQUtBLGNBQUwsR0FBc0JGLGFBQXRCO0FBQ0g7QUFDRCxpQkFBS0csY0FBTCxHQUFzQixJQUF0QjtBQUNIOzs7O3VDQUVVQyxPLEVBQVNDLGEsRUFBZTtBQUMvQixvQkFBSTtBQUNBLHdCQUFJQyxlQUFlLEtBQUtDLGtCQUFMLENBQXdCSCxPQUF4QixFQUFpQ0MsYUFBakMsQ0FBbkI7QUFDQSx5QkFBS0YsY0FBTCxHQUFzQkcsWUFBdEI7QUFDQSx5QkFBS0osY0FBTCxDQUFvQk0saUJBQXBCLENBQXNDRixZQUF0QztBQUNILGlCQUpELENBSUUsT0FBT0csU0FBUCxFQUFrQjtBQUNoQkMsNEJBQVFDLEtBQVIsQ0FBY0MsS0FBS0MsU0FBTCxDQUFlSixTQUFmLENBQWQ7QUFDSDtBQUNKOzs7cUNBRVFMLE8sRUFBU0MsYSxFQUFlO0FBQzdCLG9CQUFJO0FBQ0Esd0JBQUlDLGVBQWUsS0FBS0Msa0JBQUwsQ0FBd0JILE9BQXhCLEVBQWlDQyxhQUFqQyxDQUFuQjtBQUNBLHlCQUFLRixjQUFMLEdBQXNCRyxZQUF0QjtBQUNBLHlCQUFLSixjQUFMLENBQW9CWSxRQUFwQixDQUE2QlIsWUFBN0I7QUFDSCxpQkFKRCxDQUlFLE9BQU1HLFNBQU4sRUFBaUI7QUFDZkMsNEJBQVFDLEtBQVIsQ0FBY0MsS0FBS0MsU0FBTCxDQUFlSixTQUFmLENBQWQ7QUFDSDtBQUNKOzs7K0NBRWtCTCxPLEVBQVNDLGEsRUFBZTtBQUN2QyxvQkFBSUMsZUFBZUYsVUFBVSxxQkFBVixHQUFrQ0MsYUFBckQ7QUFDQSx1QkFBT0MsWUFBUDtBQUNIIiwiZmlsZSI6ImxvZ2dlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vQHRzLWNoZWNrXHJcbmltcG9ydCB7IENvbnNvbGVMb2dnZXIgfSBmcm9tICcuL2NvbnNvbGVMb2dnZXInO1xyXG5cclxuZXhwb3J0IGNsYXNzIExvZ2dlciB7XHJcbiAgICBcclxuICAgIGNvbnN0cnVjdG9yKGNvbnNvbGVMb2dnZXIpIHtcclxuICAgICAgICBpZiAoY29uc29sZUxvZ2dlciA9PT0gdW5kZWZpbmVkIHx8IGNvbnNvbGVMb2dnZXIgPT09IG51bGwpIHtcclxuICAgICAgICAgICAgdGhpcy5fY29uc29sZUxvZ2dlciA9IG5ldyBDb25zb2xlTG9nZ2VyKCk7XHJcbiAgICAgICAgfSBlbHNlIHtcclxuICAgICAgICAgICAgdGhpcy5fY29uc29sZUxvZ2dlciA9IGNvbnNvbGVMb2dnZXI7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIHRoaXMuY3VycmVudE1lc3NhZ2UgPSBudWxsO1xyXG4gICAgfVxyXG5cclxuICAgIExvZ01lc3NhZ2UobWVzc2FnZSwgY29ycmVsYXRpb25JZCkge1xyXG4gICAgICAgIHRyeSB7XHJcbiAgICAgICAgICAgIHZhciBmaW5hbE1lc3NhZ2UgPSB0aGlzLmNyZWF0ZUZpbmFsTWVzc2FnZShtZXNzYWdlLCBjb3JyZWxhdGlvbklkKTtcclxuICAgICAgICAgICAgdGhpcy5jdXJyZW50TWVzc2FnZSA9IGZpbmFsTWVzc2FnZTtcclxuICAgICAgICAgICAgdGhpcy5fY29uc29sZUxvZ2dlci5Mb2dDb25zb2xlTWVzc2FnZShmaW5hbE1lc3NhZ2UpO1xyXG4gICAgICAgIH0gY2F0Y2ggKGV4Y2VwdGlvbikge1xyXG4gICAgICAgICAgICBjb25zb2xlLmVycm9yKEpTT04uc3RyaW5naWZ5KGV4Y2VwdGlvbikpO1xyXG4gICAgICAgIH1cclxuICAgIH1cclxuXHJcbiAgICBMb2dFcnJvcihtZXNzYWdlLCBjb3JyZWxhdGlvbklkKSB7XHJcbiAgICAgICAgdHJ5IHtcclxuICAgICAgICAgICAgbGV0IGZpbmFsTWVzc2FnZSA9IHRoaXMuY3JlYXRlRmluYWxNZXNzYWdlKG1lc3NhZ2UsIGNvcnJlbGF0aW9uSWQpO1xyXG4gICAgICAgICAgICB0aGlzLmN1cnJlbnRNZXNzYWdlID0gZmluYWxNZXNzYWdlO1xyXG4gICAgICAgICAgICB0aGlzLl9jb25zb2xlTG9nZ2VyLkxvZ0Vycm9yKGZpbmFsTWVzc2FnZSk7XHJcbiAgICAgICAgfSBjYXRjaChleGNlcHRpb24pIHtcclxuICAgICAgICAgICAgY29uc29sZS5lcnJvcihKU09OLnN0cmluZ2lmeShleGNlcHRpb24pKTtcclxuICAgICAgICB9XHJcbiAgICB9XHJcblxyXG4gICAgY3JlYXRlRmluYWxNZXNzYWdlKG1lc3NhZ2UsIGNvcnJlbGF0aW9uSWQpIHtcclxuICAgICAgICBsZXQgZmluYWxNZXNzYWdlID0gbWVzc2FnZSArIFwiIC0gQ29ycmVsYXRpb24gSUQ6IFwiICsgY29ycmVsYXRpb25JZDtcclxuICAgICAgICByZXR1cm4gZmluYWxNZXNzYWdlO1xyXG4gICAgfVxyXG59Il19</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Apr 12 2018 23:25:20 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

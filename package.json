@@ -1,0 +1,43 @@
+{
+  "name": "jasmine_tests",
+  "version": "1.0.0",
+  "description": "POC for using jasmine and karma",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickCode/Jasmine.git"
+  },
+  "keywords": [
+    "Jasmine",
+    "Karma"
+  ],
+  "author": "Pratik Bhattacharya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickCode/Jasmine/issues"
+  },
+  "homepage": "https://github.com/patrickCode/Jasmine#readme",
+  "dependencies": {
+    "karma": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-watch": "^2.0.7",
+    "jasmine": "^3.1.0",
+    "karma-babel-preprocessor": "^7.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "phantomjs": "^2.1.7",
+    "requirejs": "^2.3.5"
+  }
+}
